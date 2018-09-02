@@ -1,0 +1,5 @@
+#!/usr/bin/env bash -eu
+
+./bin/scfill ./README.template > README.fill.template
+./bin/sc2md ./README.fill.template > README.md
+
