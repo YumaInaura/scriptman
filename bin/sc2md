@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+filepath = ARGV[0]
+
+text = File.read(filepath)
+
+text
+  .gsub(/\A#.+\n/, '')
+  .gsub(/\A\n+|\n+\z/, '')
+  .split(/\n{2,}/)
+  .each do |line|
+    if line.start_with?('##')
+      puts "#{line.gsub(/^#/, '')}"
+    elsif line.start_with?('#')
+      puts "#{line.gsub(/^#[ \s]+/, '')}"
+    else
+      puts "```\n#{line}\n```"
+    end
+
+    puts "\n"
+  end
+
+
