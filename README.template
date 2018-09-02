@@ -1,14 +1,14 @@
 #!/usr/bin/env bash -eu
 
-# SCRIPT MAN
+## SCRIPT MAN
 
 # Some Logo Now Creating
 
 ### Install example
 
-#```
-#ln -s bin/scfill /usr/local/bin
-#```
+# ```
+# ln -s bin/scfill /usr/local/bin
+# ```
 
 # In that way Do not remove this repository in your local.
 
